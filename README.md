@@ -67,8 +67,11 @@ Respons:
   "probability": 0.97
 }
 ```
-## 📷 Contoh Visualisasi
-main.py juga menampilkan plot hasil prediksi model (aktual vs prediksi), menggunakan matplotlib.
+
+## 📊 Contoh Visualisasi
+Output dari `main.py` menampilkan plot hasil prediksi prediksi model (aktual vs prediksi), menggunakan matplotlib.
+
+![regression-output](outputs/hasil_logistic_regression.png)
 
 ## 🛠️ Tools & Library yang Digunakan
 - Python 3.11+
