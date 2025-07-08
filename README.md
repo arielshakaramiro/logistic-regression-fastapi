@@ -36,36 +36,37 @@ dan disediakan API untuk prediksi berbasis FastAPI, sehingga model dapat digunak
 
 
 ## 🚀 Cara Menjalankan Proyek
-### 1. Clone Repository
-git clone https://github.com/username/logistic-regression-api.git \
+```bash
+1. Clone Repository
+git clone https://github.com/username/logistic-regression-api.git 
 cd logistic-regression-api 
 
-### 2. Buat Virtual Environment (Opsional tapi Disarankan)
+2. Buat Virtual Environment (Opsional tapi Disarankan)
 python -m venv venv\
-source venv/bin/activate  # Linux/Mac\
+source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 
-### 3. Install Dependensi
+3. Install Dependensi
 pip install -r requirements.txt
 
-### 4. Jalankan Model Training
-python main.py\
-Model akan disimpan di folder models/logistic_model.pkl.
+4. Jalankan Model Training
+python main.py
+# Model akan disimpan di folder models/logistic_model.pkl.
 
-### 5. Jalankan FastAPI Server
-uvicorn app:app --reload\
-API akan aktif di: http://127.0.0.1:8000
+5. Jalankan FastAPI Server
+uvicorn app:app --reload
+# API akan aktif di: http://127.0.0.1:8000
 
-### 6. Coba Endpoint /predict
-Gunakan tools seperti Postman, Insomnia, atau langsung via terminal:\
+6. Coba Endpoint /predict
+# Gunakan tools seperti Postman, Insomnia, atau langsung via terminal:
 curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json" -d "{\"x\": 6.5}"
 
-Respons:\
-{\
-  "prediction": 1,\
-  "probability": 0.97\
+Respons:
+{
+  "prediction": 1,
+  "probability": 0.97
 }
-
+```
 ## 📷 Contoh Visualisasi
 main.py juga menampilkan plot hasil prediksi model (aktual vs prediksi), menggunakan matplotlib.
 
